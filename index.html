@@ -30,7 +30,40 @@
           
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> 
+          <input class="form-control mr-sm-2" type="search" value=""id="search" onchange="openPage()"placeholder="Search" aria-label="Search"> 
+		<script>
+			function openPage(){
+				var x = document.getElementById("search").value;
+				
+				if (x === "About"){
+					window.open("About page.html");
+				}
+				if (x === "about"){
+					window.open("About page.html");
+				}
+				if (x === "ABOUT"){
+					window.open("About page.html");
+				}
+			if (x === "Contact"){
+					window.open("page 2.html");
+				}
+			if (x === "contact"){
+					window.open("page 2.html");
+				}
+			if (x === "CONTACT"){
+					window.open("page 2.html");
+				}
+			if (x === "contact us"){
+					window.open("page 2.html");
+				}
+			if (x === "Contact Us"){
+					window.open("page 2.html");
+				}
+			if (x === "CONTACT US"){
+					window.open("page 2.html");
+				}
+			}
+		</script>
 
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
